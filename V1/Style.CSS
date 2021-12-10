@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/*----------------------------------------- GENERAL ----------------------------------------->*/
+body{
+    font-family: 'Montserrat';
+    margin: 0px;
+    padding: 0px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-image:url("images/fond.png");
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+/*--------------------------------------- NAVIGATION -------------------------------------->*/
+nav{
+    position:fixed;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding: 0px 50%;
+    text-transform: uppercase;
+    z-index: 1000 !important;
+}
+
+.logo{
+    position: fixed ; 
+    left: 20px;
+    top:0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    margin: 30px 15px;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #403E3E;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.active-menu:hover{
+    text-shadow: 1px 1px 2px #56877F; 
+}
+
+/*-------------------------------------------- PIED DE PAGE ---------------------------------->*/
+footer{
+    height: 200px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+footer p{
+    color: #7e7D7D;
+}
+
+.social-header p{
+    color: #403E3E;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.social-container img{
+    width:50px;
+    height:50px;
+    margin: -10px 10px 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*--------------------------------------------- INTRODUCTION ------------------------------------->*/
+.intro-container p:nth-child(1){
+    font-family: 'Montserrat';
+    color: #56877F;
+    font-size: 22px;
+    line-height: 30px;
+}
+.intro-container p:nth-child(2){
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #56877F;
+    font-size: 120px;
+}
+.intro-container p:nth-child(3){
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #403E3E;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.intro-container{
+  position: absolute;
+  left:13%;
+  top:42%;
+  transform: translate(-13%,-42%);
+}
+.intro-container p{
+  line-height: 0px;
+  margin: 50px 0px 25px;
+}
+.intro-container button{
+    width: 130px;
+    height: 42px;
+    border-radius: 50px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 10px;
+    outline:none;
+}
+
+.engager-btn, .engager-btn a:link, .engager-btn a:visited{
+    text-decoration: none;
+    background-color: #FFF; 
+    color: #56877F ;
+    border: none;
+}
+.cv-btn,.cv-btn a:link, .cv-btn a:visited {
+    text-decoration: none;
+    background-color: #56877F;
+    color: #E5EDEB;
+    border: none;
+}
+
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.ecran{
+    height:350px;
+    position:absolute;
+    bottom:120px;
+    right: 10px;
+}
+
+/*-------------------------------------- A PROPOS DE MOI --------------------------------------->*/
+.about-container{
+    width:83%;
+    height:330px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin : -3% auto 20px auto;
+    position:relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-container img{
+    height:280px;
+}
+.about-text{
+    width:500px;
+    padding-right:5%;
+}
+.about-text p:nth-child(1){
+    color: #403E3E;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 28px;
+    line-height: 0px;
+    text-transform: uppercase;
+}
+.about-text p:nth-child(2){
+    color:#56877F;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 17px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+.about-text p:nth-child(3){
+    color:#7e7D7D;
+    font-family: 'Montserrat';
+    font-size: 17px;   
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*----------------------------------------- SOFTSKILLS --------------------------------------->*/
+.softskills{
+    height:500px;
+}
+.softskills-text{ /*---------------------- SOFTSKILLS TEXTE ------------------------------------>*/
+    width:720px;
+    margin:-190px 8.5% 35px;
+}
+.softskills-text p:nth-child(1){
+    color: #403E3E;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 28px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+
+.softskills-text p:nth-child(2){
+    color:#56877F;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 17px;
+    line-height: 10px;
+}
+
+.softskills-text p:nth-child(3){
+    color:#7e7D7D;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.softskills-container{ /*---------------------- SOFTSKILLS BOITES ---------------------------->*/
+    display:flex;
+    justify-content: space-between;
+    margin:auto 8.5% auto;
+}
+
+.softskills-container-1, .softskills-container-2,.softskills-container-3{
+    width: 300px;
+    height:320px;
+    background repeat:no-repat;
+    background-size:cover;
+    background-color: #FFF;
+    border-radius: 10%;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.softskills-container-1{
+    background-image: url("images/cogn.png");
+}
+.softskills-container-2{
+    background-image: url("images/comm.png");
+}
+.softskills-container-3{
+    background-image: url("images/org.png");
+}
+
+.softskills-container-1 span, .softskills-container-2 span,.softskills-container-3 span{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #56877F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans serif;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.softskills-heading{
+    color: #56877F;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 5px;
+}
+
+.softskills-detail{
+    margin: 0% 15%;
+    color: #7e7D7D;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*---------------------------------- DERNIERE REALISATION --------------------------------------->*/
+.project{
+
+}
+.project-text{ /*---------------------- PROJECT TEXTE ------------------------------------------->*/
+    width:720px;
+    margin: -50px 8.5% 35px;
+}
+.project-text p:nth-child(1){
+    color: #403E3E;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 28px;
+    line-height: 5px;
+    text-transform: uppercase;
+}
+
+.project-text p:nth-child(2){
+    color:#56877F;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight:bold;
+    font-size: 17px;
+    line-height: 10px;
+}
+
+.project-text p:nth-child(3){
+    color:#7e7D7D;
+    font-family: 'Montserrat';
+    font-size: 17px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.project-container{ /*-------------------------- PROJECT BOITES  ------------------------------>*/
+    width:83%;
+    height:330px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin : 20px auto 0px auto;
+    position:relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
